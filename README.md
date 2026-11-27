@@ -1,6 +1,6 @@
 # aineo Knowledge Vault
 
-The project's shared knowledge base. It lives in this repository, is versioned with the code, and is read and written by everyone working on aineo — people and agents alike.
+The project's shared knowledge base. It is a repository of its own, [aineo-knowledge](https://github.com/mathiasbrito/aineo-knowledge), apart from the plugin's [aineo](https://github.com/mathiasbrito/aineo) since 2026-11-27 so that plugin installs do not carry it, and is read and written by everyone working on aineo — people and agents alike. Clone it into the git-ignored `knowledge-vault/` at the root of your aineo checkout: `git clone https://github.com/mathiasbrito/aineo-knowledge.git knowledge-vault`.
 
 **It is an [Obsidian](https://obsidian.md) vault.** Open the `knowledge-vault/` folder as a vault and the `[[wikilinks]]` resolve. It is also plain Markdown, so it reads fine in any editor or on a code host.
 
