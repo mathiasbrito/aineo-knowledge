@@ -1,0 +1,15 @@
+# ---------------------------------------------------------------------------
+# aineo-knowledge — the vault's ignore rules
+# ---------------------------------------------------------------------------
+
+# --- macOS -----------------------------------------------------------------
+.DS_Store
+._*
+
+# --- Obsidian workspace state ----------------------------------------------
+# The vault's shared Obsidian settings are tracked; each reader's UI state is
+# not.
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.trash/
