@@ -1,6 +1,6 @@
 # aineo Knowledge Vault
 
-**This is the project's knowledge vault. It lives in the repository and is shared by everyone working on aineo.**
+**This is the project's knowledge vault, shared by everyone working on aineo. It is a repository of its own, `aineo-knowledge`, cloned into the git-ignored `knowledge-vault/` at the root of an aineo checkout** (since 2026-11-27, T191: the vault was 46% of the plugin's tree). Every `knowledge-vault/...` path in aineo's rules means this clone. An agent in a worktree of aineo reads and writes the main checkout's clone; an agent the orchestrator dispatched writes no note here: it hands its note back, and the orchestrator commits the notes in batches.
 
 > [!IMPORTANT]
 > **This vault replaces any personal vault for all aineo work.**
@@ -60,7 +60,7 @@ If the vault and a spec disagree, **the spec wins and the vault is wrong** — f
 
 ## Branch rule
 
-**Never commit or push to `main` or `dev`** — not for a note, not for a typo, not once. Vault edits follow the same flow as code: a `knowledge/` branch (vault only), then a pull request. Enforced by a Claude `PreToolUse` hook and by `.githooks/`; see the branch section in the repository's root `CLAUDE.md`.
+**Never commit or push to `main`** — not for a note, not for a typo, not once. This repository has no `dev`: every change lands through a `knowledge/` branch and a pull request into `main`, rebased or squashed, as linear history requires. Enforced by branch protection on the remote, with admins included, and, in a session run from the aineo checkout, by aineo's Claude `PreToolUse` hook; see the branch section in aineo's root `CLAUDE.md`. Code never lands here, and vault content never lands in aineo.
 
 ## Working rules
 
